@@ -9,7 +9,7 @@ bl_info = {
 }
 
 import bpy;
-from . import UVStacker;
+from .UVStacker import main;
 
 # Operator
 class IMAGE_OT_UVStacker(bpy.types.Operator):
@@ -18,7 +18,7 @@ class IMAGE_OT_UVStacker(bpy.types.Operator):
     bl_options = { "REGISTER", "UNDO" }
 
     def execute(self, context):
-        UVStacker.main(
+        main(
             context.scene.selectedOnly,
             context.scene.doPacking,
             context.scene.packMargin,

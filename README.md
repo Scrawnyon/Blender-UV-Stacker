@@ -1,5 +1,5 @@
 ## Blender UV Stacker
-Stacks similar UV on top of eachother to save space. Has options to automatically unwrap and pack islands
+Stacks similar UVs on top of eachother to save space. Has options to automatically unwrap and pack islands
 
 ![Example](Docs/Images/Example.png)
 
@@ -8,4 +8,5 @@ In Edit mode, open the N panel in the Image Editor. Tweak settings and click "St
 Note that islands with different sizes do not stack. Enabling "Auto-Unwrap" re-unwrap all meshes, which will also make the sizes match
 
 ### Requirements
+Uses the bpy_extras.bmesh_utils module
 Tested using Blender 3.6.2
